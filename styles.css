@@ -85,7 +85,7 @@ ul{
     align-items: center;
     gap: 2rem;
 }
-li:first-child{
+li{
     border: 1px solid rgba(0, 0, 0, 0.367);
     border-radius:1rem;
     padding:0.4rem;
@@ -93,7 +93,7 @@ li:first-child{
     align-items: center;
     gap: 4px;
 }
-li:first-child img{
+li img{
     width: 12px;
     height: 12px;
 }
