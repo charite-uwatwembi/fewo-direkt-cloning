@@ -71,21 +71,19 @@ button{
 .myInput{
     width: 30%;
 }
+.myInput img{
+    width: 20px;
+}
 .myButton{
     width: 10%;
 }
-.myFooter{
-    height: 17%;
-    display: flex;
-    align-items: end;
-    padding: 0 5rem 1rem 5rem;
-}
+
 ul{
     display: flex;
     align-items: center;
     gap: 2rem;
 }
-li{
+li:first-child{
     border: 1px solid rgba(0, 0, 0, 0.367);
     border-radius:1rem;
     padding:0.4rem;
@@ -93,10 +91,162 @@ li{
     align-items: center;
     gap: 4px;
 }
-li img{
+li:first-child img{
     width: 12px;
     height: 12px;
 }
 li{
     list-style: none;
+}
+
+main {
+  /* background-image: url("../img/banner2.png"); */
+  background-repeat: no-repeat;
+  height: 90vh;
+  backdrop-filter: grayscale(50%);
+  background-size: cover;
+  background-position: 50% 75%;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+/* section 2 starts here */
+main .section-2 {
+    width: 100vw;
+    padding-top: 80px;
+    color: #333 !important;
+  }
+  
+  main .section-2 h2 {
+    padding-block: 10px;
+  }
+  main .section-2 .slideshow-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    overflow-x: scroll;
+  }
+  main .section-2 .slideshow-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  main .section-2 .slideshow-container .slide {
+    border-radius: 20px;
+    border: 0.2px solid #e1dada;
+    overflow: hidden;
+    min-height: 170px;
+    max-height: 170px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  main .section-2 .slideshow-container .slide img {
+    width: 100%;
+    max-height: 130px;
+    flex-basis: 80%;
+  }
+  main .section-2 .slideshow-container .slide .img-title {
+    font-weight: 700;
+    padding: 10px;
+    font-size: 13px;
+  }
+  
+  .slide-button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius:50%;
+    right: 45px;
+    align-items: center;
+    font-size: 16px; 
+    color: blue;
+  }
+  .slide-button span  {
+    position: absolute;
+    font-size: 42px;
+    font-weight: 900;
+    top: 0;
+    right: 5px;
+    margin-top: -11px;
+  }
+  
+  main .section-2 h1 {
+    padding-block: 15px;
+    margin-top: 25px;
+  }
+  
+  main .section-2 .slideshow-container .accomodation {
+    min-width: 320px;
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  main .section-2 .slideshow-container .accomodation img {
+    min-height: 100%;
+    max-height: 200px;
+    border-radius: 20px;
+    filter: opacity(0.9);
+    cursor: pointer;
+  }
+  main .section-2 .slideshow-container .accomodation p {
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  /* section3 starts here */
+main .section-3 {
+  width: 100vw;
+  margin-top: 200px;
+}
+main .section-3 .container {
+  margin-top: 30px;
+  background-image: url("../img/banner4.jpg");
+  background-repeat: no-repeat;
+  height: 90vh;
+  backdrop-filter: grayscale(50%);
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+}
+main .section-3 .text-container {
+  text-align: left;
+  max-width: 40%;
+  padding: 3rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-125%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .section-3 .text-container h2 {
+  font-size: 2rem;
+  padding-block: 10px;
+}
+main .section-3 .text-container p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+main .section-3 .text-container button {
+  margin-top: 15px;
+  padding: 16px 20px;
+  background-color: #120c4a;
+  outline: none;
+  color: white;
+  border: none;
+  font-weight: 700;
+  border-radius: 20px;
+  cursor: pointer;
 }
